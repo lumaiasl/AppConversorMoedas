@@ -2,11 +2,13 @@ import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
+import { PickerItem } from './picker';
 export default function App() {
   return (
     <SafeAreaView style={styles.container}>
       <View style={styles.areaMoeda}>
         <Text style={styles.titulo}>Selecione uma moeda</Text>
+        <PickerItem />
       </View>
     </SafeAreaView>
   );

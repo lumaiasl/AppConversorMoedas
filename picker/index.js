@@ -1,10 +1,15 @@
 import React, {} from "react";
-import {StyleSheet} from "react-native";
+import {StyleSheet, View} from "react-native";
+import { Picker } from "@react-native-picker/picker";
 
-export default function Picker() {
-    
+export function PickerItem() {
+    return(
+       <Picker>
+            <Picker.Item value="BTC" key={0} label="BTC" />
+       </Picker>
+    );
 };
 
 const styles = StyleSheet.create({
-
-});
+    
+})
